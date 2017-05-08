@@ -27,3 +27,15 @@ readFileAsArray('./data.txt')
     console.log(lines)
   })
   .catch(console.error)
+
+// Async/await pattern work perfectly with any promise interface except callback style async func e.g setTimeout
+async function listData() {
+  try {
+    const lines = await readFileAsArray('./data.txt')
+    console.log(lines)
+  } catch (e) {
+
+  }
+}
+
+listData()

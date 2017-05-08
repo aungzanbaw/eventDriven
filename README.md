@@ -4,3 +4,4 @@
 
 * Usual pattern of Node callBack with error first, last callback style
 * New Promise Object pattern
+* Async pattern treat as it was synchronous
